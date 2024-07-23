@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -87,7 +88,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight02.jpg" alt="maria fernanda velasquez" />
+							<img src="images\dance.jpg" alt="maria fernanda velasquez" />
 						</div>
 					</section>
 
@@ -97,23 +98,33 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>my projects.</h2>
-							<p>TBD [expand on interests]</p>
+							<p>mainly focused on healthcare and sustainability.</p>
 						</div>
-
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								
 								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images\dux.png" alt="maria fernanda velasquez" />
-									</a>
+									<div class="image">
+										<img src="images/dux.png" alt="maria fernanda velasquez" />
+									</div>
 									<div class="caption">
 										<h3>dux.</h3>
 										<p><i>[currently building]</i><br> MRI analysis model that predicts FSHD disease progression for optimal therapeutic insertion.</p>
 										<ul class="actions fixed">
-											<li><span class="button small">learn more</span></li>
+											<li><span class="button small" data-modal="modalDux">Learn More</span></li>
 										</ul>
 									</div>
+									
 								</article>
+
+								<div id="modalDux" class="modal">
+									<div class="modal-content">
+										<span class="close">&times;</span>
+										<h2>Dux Project</h2>
+										<p>Details about the Dux project...</p>
+									</div>
+								</div>
+
 								<article>
 									<a href="images/gallery/fulls/02.jpg" class="image">
 										<img src="images\yaku.png" alt="maria fernanda velasquez" />
@@ -126,6 +137,7 @@
 										</ul>
 									</div>
 								</article>
+
 								<article>
 									<a href="images/gallery/fulls/05.jpg" class="image">
 										<img src="images\saveheat.png" alt="maria fernanda velasquez" />
@@ -176,77 +188,8 @@
 									</div>
 								</article>
 							</div>
-
 					</section>
 
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>my big milestones:</h2>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
 
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
@@ -273,6 +216,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
