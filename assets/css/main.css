@@ -8601,3 +8601,78 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+/* Carousel Styling */
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+}
+
+#carousel .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#carousel img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#carousel .name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+#carousel .occupation {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+#carousel .testimonial {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 20px 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:nth-child(1):checked ~ #carousel {
+    transform: translateX(0);
+}
+input[type="radio"]:nth-child(2):checked ~ #carousel {
+    transform: translateX(-100%);
+}
+input[type="radio"]:nth-child(3):checked ~ #carousel {
+    transform: translateX(-200%);
+}
+input[type="radio"]:nth-child(4):checked ~ #carousel {
+    transform: translateX(-300%);
+}
+input[type="radio"]:nth-child(5):checked ~ #carousel {
+    transform: translateX(-400%);
+}
+
+#carousel {
+    transition: transform 0.5s;
+}
+
+.no-bullets, .no-bullets li {
+	list-style-type:none;
+
+}
