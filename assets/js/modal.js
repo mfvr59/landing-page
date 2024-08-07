@@ -1,16 +1,26 @@
-const openButtons = document.querySelectorAll("[data-open-modal]");
+// Function to open the modal
+function openModal(event) {
+  var modalId = event.target.getAttribute('data-id');
+  var modal = document.querySelector(`dialog[data-modal][data-id="${modalId}"]`);
+  if (modal) {
+      modal.showModal();
+  }
+}
 
-openButtons.forEach(button => {
-  const id = button.getAttribute("data-id");
-  const modal = document.querySelector(`[data-modal][data-id="${id}"]`);
-  const closeButton = document.querySelector(`[data-close-modal][data-id="${id}"]`);
+// Function to close the modal
+function closeModal(event) {
+  var modalId = event.target.getAttribute('data-id');
+  var modal = document.querySelector(`dialog[data-modal][data-id="${modalId}"]`);
+  if (modal) {
+      modal.close();
+  }
+}
 
-  button.addEventListener('click', () => {
-    modal.showModal();
-  });
+// Add event listeners to the buttons
+document.querySelectorAll('[data-open-modal]').forEach(button => {
+  button.addEventListener('click', openModal);
+});
 
-
-  closeButton.addEventListener('click', () => {
-    modal.close();
-  });
+document.querySelectorAll('[data-close-modal]').forEach(button => {
+  button.addEventListener('click', closeModal);
 });
